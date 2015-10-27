@@ -1,5 +1,5 @@
 <template name="messageList">
-  <div class="messages">
+  <div class="message-list">
 	{{#each messages}}
 	  {{> messageItem}}
 	{{/each}}
@@ -7,7 +7,7 @@
 </template>
 
 <template name="messageItem">
-  <div class="ui {{messageClass}} message">
+  <div class="ui {{messageClass}} message alert">
     <i class="close icon"></i>
     <div class="header">
       {{message}}
